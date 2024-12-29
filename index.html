@@ -3,83 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Технический Перерыв 🚧</title>
+    <title>Отзывы о школе</title>
     <style>
         body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Poppins', sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            background: linear-gradient(135deg, #ff7eb3, #ff758c, #ff6f61);
-            background-size: 400% 400%;
-            animation: gradient 8s ease infinite;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
             color: #fff;
+            margin: 0;
+            padding: 20px;
             text-align: center;
         }
-        @keyframes gradient {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
         h1 {
-            font-size: 4rem;
-            margin: 0;
-            animation: pulse 1.5s infinite;
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
         }
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
+        .reviews-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
         }
-        p {
-            font-size: 1.5rem;
-            margin-top: 1rem;
-            line-height: 1.6;
-        }
-        .icon {
-            font-size: 6rem;
-            margin-bottom: 1rem;
-            animation: bounce 2s infinite ease-in-out;
-        }
-        @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-15px); }
-        }
-        .button {
-            margin-top: 2rem;
-            padding: 1rem 2rem;
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #fff;
-            background: #ff5733;
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        .review-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            max-width: 300px;
+            text-align: left;
             transition: transform 0.3s ease, background 0.3s ease;
         }
-        .button:hover {
-            background: #c70039;
-            transform: translateY(-5px);
+        .review-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.2);
+        }
+        .review-author {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        .review-date {
+            font-size: 0.9rem;
+            color: #d1d1d1;
+            margin-bottom: 15px;
+        }
+        .review-text {
+            font-size: 1rem;
+            line-height: 1.5;
         }
         footer {
-            position: absolute;
-            bottom: 10px;
-            font-size: 1rem;
-            color: #f8f9fa;
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #d1d1d1;
         }
     </style>
 </head>
 <body>
-    <div class="icon">🚧</div>
-    <h1>Технический Перерыв</h1>
-    <p>Сайт временно недоступен. Мы уже работаем над улучшениями! 🎉</p>
-    <p>Возвращайтесь позже, чтобы увидеть обновления и новинки.</p>
-    <button class="button" onclick="alert('Спасибо за терпение! 💖')">Подробнее ✨</button>
-    <footer>&copy; 2024 Техническая Команда. Все права защищены. 🚀</footer>
+    <h1>Отзывы о школе</h1>
+    <div class="reviews-container">
+        <div class="review-card">
+            <div class="review-author">Евгений Ковалик</div>
+            <div class="review-date">13 фев 2024 в 20:20</div>
+            <div class="review-text">Отличная образовательная организация, хороший отзывчивый коллектив, очень добрая администрация. Очень нравится работать в этой школе! Лучшая школа!!!</div>
+        </div>
+        <div class="review-card">
+            <div class="review-author">Илья Сергеевич</div>
+            <div class="review-date">12 мар 2024 в 7:33</div>
+            <div class="review-text">Самая лучшая организация.</div>
+        </div>
+        <div class="review-card">
+            <div class="review-author">Глеб Васильев</div>
+            <div class="review-date">17 апр 2024 в 0:20</div>
+            <div class="review-text">Хорошая школа.</div>
+        </div>
+        <div class="review-card">
+            <div class="review-author">Бехруз Ахмедов</div>
+            <div class="review-date">17 апр 2024 в 0:24</div>
+            <div class="review-text">Я устроился недавно и мне понравилось. Добрый директор и лучшая школа, советую!</div>
+        </div>
+        <div class="review-card">
+            <div class="review-author">Алексей Кузнецов</div>
+            <div class="review-date">7 дек 2024 в 21:44</div>
+            <div class="review-text">Я педагог в этой школе и работаю пару дней. Мне всегда помогают и делают меня счастливым, спасибо им!</div>
+        </div>
+        <div class="review-card">
+            <div class="review-author">Oii Kev</div>
+            <div class="review-date">7 дек 2024 в 21:37</div>
+            <div class="review-text">Самая комфортная школа, рассчитываю остаться работать тут. Директор просто прекрасный человек.</div>
+        </div>
+    </div>
+    <footer>&copy; 2024 Школа №16. Благодарим за ваши отзывы!</footer>
 </body>
 </html>

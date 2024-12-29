@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Технический Перерыв 🚧</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #ff7eb3, #ff758c, #ff6f61);
+            background-size: 400% 400%;
+            animation: gradient 8s ease infinite;
+            color: #fff;
+            text-align: center;
+        }
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        h1 {
+            font-size: 4rem;
+            margin: 0;
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        p {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+            line-height: 1.6;
+        }
+        .icon {
+            font-size: 6rem;
+            margin-bottom: 1rem;
+            animation: bounce 2s infinite ease-in-out;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+        .button {
+            margin-top: 2rem;
+            padding: 1rem 2rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+            background: #ff5733;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+        .button:hover {
+            background: #c70039;
+            transform: translateY(-5px);
+        }
+        footer {
+            position: absolute;
+            bottom: 10px;
+            font-size: 1rem;
+            color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+    <div class="icon">🚧</div>
+    <h1>Технический Перерыв</h1>
+    <p>Сайт временно недоступен. Мы уже работаем над улучшениями! 🎉</p>
+    <p>Возвращайтесь позже, чтобы увидеть обновления и новинки.</p>
+    <button class="button" onclick="alert('Спасибо за терпение! 💖')">Подробнее ✨</button>
+    <footer>&copy; 2024 Техническая Команда. Все права защищены. 🚀</footer>
+</body>
+</html>
